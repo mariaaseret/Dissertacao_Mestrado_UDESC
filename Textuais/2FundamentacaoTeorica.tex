@@ -1,0 +1,225 @@
+\chapter{Fundamentação Teórica}\label{cap:FundamentacaoTeorica}
+
+A fundamentação teórica visa abordar os principais assuntos relacionados a proposta de pesquisa. Na primeira Seção \ref{sec:ConceitosEvasao} é introduzido cronologicamente os conceitos de evasão escolar. Com os conceitos apresentados, é definido qual conceito é utilizado neste trabalho para que na seção \ref{sec:ClassificacaoDados} sejam apresentados os dados educacionais da base do INEP  e suas classificações. 
+
+Na Seção \ref{sec:MeninasDigitais} apresenta-se o cenário da participação das mulheres na área das STEM. A seção \ref{sec:CalculoEvasao} une os conceitos anteriores ao cálculo da Evasão, relacionando com as variáveis da base de dados. E por fim, a Seção \ref{sec:discussaoCapitulo} encerra o capítulo com uma discussão e geral sobre as seções anteriores.
+
+
+\section{Evasão Escolar}\label{sec:ConceitosEvasao}
+A permanência no ensino superior está diretamente ligada a evasão escolar, para isso, faz-se necessário trazer análises relacionadas a evasão das mulheres, especificamente nos cursos de Computação e Tecnologia da Informação, mas antes disso é importante conceituar a evasão.
+
+Apesar do conceito de evasão parecer autoexplicativo e entendido como a saída do estudante do curso antes da obtenção do diploma, não há um consenso no termo evasão. %As próximas subseções apresentam esses conceitos e também as formas de se calcular a evasão.
+
+%Sabe-se que a evasão é um tema complexo e nessa subseção aborda-se os diferentes conceitos, além de apresentar o conceito utilizado nesse trabalho.
+
+O INEP conceitua evasão e diferencia do termo abandono, "O conceito técnico de abandono é diferente de evasão. Abandono quer dizer que o aluno deixa a escola num ano mas retorna no ano seguinte. Evasão significa que o aluno sai da escola e não volta mais para o sistema" \cite{estatistica:2014}.
+
+\citeonline{utiyama:2003} abordam a evasão diretamente como a saída definitiva do aluno de seu curso de origem, sem concluí-lo. Não estabelece critérios de tempo de curso, momento da saída e nenhuma outra variável relacionada. Já \citeonline{fernandes:2005} define evasão como os alunos que não completaram cursos ou programas de estudo e diferente dos outros conceitos, especifica que deve-se considerar nos cálculos os alunos que nunca iniciaram o curso, mas se matricularam. 
+
+\citeonline{gaioso:2005} apresenta como definição de evasão “interrupção no ciclo de estudo” e segundo a autora isso ocorre quando o aluno deixa o curso por qualquer motivo diferente da conclusão e obtenção da titulação. O trabalho de \citeonline{gaioso:2005} também apresenta os motivos pelos quais o aluno é classificado como evadido, sendo eles não efetuar a matrícula no prazo estabelecido, transferência interna ou mudança de curso, transferência externa, matrícula em curso de outra instituição via aprovação em processo seletivo, desistência, re-opção ou jubilamento.
+
+\citeonline{abbad:2006} referem-se a evasão como a desistência definitiva do aluno em qualquer etapa do curso, porém não deixam claro se aplica-se também aos alunos que apenas se matricularam e nunca iniciaram o curso de fato.
+
+
+Com apresentado, existe uma série de definições para o termo evasão, no presente estudo, consideram-se evadidos todos os alunos desistentes com algum vínculo de matrícula, mesmo nunca tendo assistido a uma aula. Tal abordagem é utilizada por tratarmos aqui com dados provindos do INEP, onde essa distinção não é apresentada. Conhecer bem o fenômeno de evasão tem papel fundamental para a promoção de ações adequadas.
+
+Nesta dissertação, o conceito utilizado é a evasão de curso, pois pretende-se entender a evasão feminina dos cursos de Computação e Tecnologias da Informação e Comunicação, mesmo que a aluna tenha permanecido na mesma instituição de ensino superior fazendo outro curso ou se foi transferida para o mesmo curso em outra instituição.
+
+
+
+\section{Dados do INEP e suas classificações} \label{sec:ClassificacaoDados}%suas classificações são as classificações de cada coluna utilizada, como por ex o número 06 do CINE (Classificação Internacional Normalizada da Educação)
+
+A grande maioria dos estudos e dados estatísticos relacionados aos níveis da educação brasileira são fornecidos pelo Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP), que é classificado como uma autarquia federal e está vinculado ao Ministério da Educação (MEC). Tais estudos e dados são realizados e fornecidos com o principal objetivo de auxiliar o desenvolvimento educacional, econômico e social do país, realizando o desenvolvimento de iniciativas e políticas educacionais para contribuir com todas essas áreas da sociedade.
+
+Uma das principais ações que o INEP realiza, é a divulgação e disponibilização anual dos microdados do Censos da educação básica até a educação superior, assim oferecendo diversos dados estatísticos que possibilitam a realização de estudos, desenvolvimento de ferramentas e técnicas para contribuição com as gestões públicas educacionais. Segundo \citeonline{ferreira:2021}, é importante a atualização e disponibilização anual dessas bases de dados, pois suas informações podem ajudar a melhorar e também resolver os problemas presentes em nosso sistema de educação.
+
+
+Observando a organização de dados apresentadas na base, para que as publicações dos dados estatísticos educacionais seguissem os parâmetros utilizados internacionalmente em pesquisas relacionadas à educação, o INEP passou a adotar o chamado \textit{International Standard Classification of Education} (ISCED), que traduzido para o português significa Classificação Internacional Normalizada da Educação (CINE). A ISCED é a referência proposta pela Unesco para classificar cursos e certificações seguindo um padrão que permite reunir, compilar e analisar estatísticas educacionais comparáveis tanto ao âmbito nacional como internacional (Unesco, 2015).
+
+Essa mudança adotada pelo INEP, resultou na CINE Brasil, que corresponde a Classificação Internacional Normalizada da Educação adaptada para os cursos de graduação presentes no Brasil. A CINE Brasil consiste em 11 áreas de formação, as quais são classificadas como segue: 00 Programas Básicos; 01 Educação; 02 Artes e Humanidades; 03 Ciências Sociais, Comunicação e Informação; 04 Negócios, Administração e Direito; 05 Ciências Naturais, Matemática e Estatística; 06 Computação e Tecnologias da Informação e Comunicação (TIC); 07 Engenharia, Produção e Construção; 08 Agricultura, Silvicultura, Pesca e Veterinária; 09 Saúde e Bem-Estar e 10 Serviços. 
+
+Esta classificação de cursos 06 Computação e Tecnologias da Informação e Comunicação (TIC) abrangem as formações relacionadas a gestão de TIC, produção de software, ciência da computação, sistemas de informação, engenharia de computação, soluções computacionais para domínios específicos, bem como formações interdisciplinares que apresentem como principal conteúdo Computação e Tecnologias da Informação e Comunicação (TIC). Quanto a engenharia de computação, ela pode ser classificada como 06 ou como 07, que é específico para as engenharias, isso depende de qual resolução do Ministério da Educação (MEC) que o curso segue.
+
+Ao relacionar a classificação CINE com o banco de dados do INEP dos anos de 2009 até 2019 obtém-se um total de 465 nomes de cursos em todo o Brasil. No mesmo contexto brasileiro, existem 24.858 cursos classificados como 06. A Tabela \ref{tab:QtdCursos} apresenta o agrupamento dos 20 nomes de cursos mais usados (93,6\%). É possível observar pela Tabela \ref{tab:QtdCursos}, que o nome Ciência da Computação aparece com acento na terceira linha (n=3491), sem acento na décima terceira linha (n=281) e no plural na décima sétima linha (n=126). Desta forma percebe-se a não padronização dos dados.
+
+
+\begin{table}[H]
+\centering
+\caption{Quantidade por Nome de Curso de 2009 a 2019}
+\label{tab:QtdCursos}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|r|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+{\color[HTML]{000000} NOME CURSO}                                                                                                      & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}{\color[HTML]{000000} QUANTIDADE DE CURSOS}} \\ \hline
+{\color[HTML]{000000} ANÁLISE E DESENVOLVIMENTO DE SISTEMAS}                                                                           & {\color[HTML]{000000} 4823}                                                              \\ \hline
+{\color[HTML]{000000} SISTEMAS DE INFORMAÇÃO}                                                                                          & {\color[HTML]{000000} 4320}                                                              \\ \hline
+{\color[HTML]{000000} CIÊNCIA DA COMPUTAÇÃO}                                                                                           & {\color[HTML]{000000} 3491}                                                              \\ \hline
+{\color[HTML]{000000} REDES DE COMPUTADORES}                                                                                           & {\color[HTML]{000000} 2585}                                                              \\ \hline
+{\color[HTML]{000000} SISTEMA DE INFORMAÇÃO}                                                                                           & {\color[HTML]{000000} 1678}                                                              \\ \hline
+{\color[HTML]{000000} GESTÃO DA TECNOLOGIA DA INFORMAÇÃO}                                                                              & {\color[HTML]{000000} 1658}                                                              \\ \hline
+{\color[HTML]{000000} SISTEMAS PARA INTERNET}                                                                                          & {\color[HTML]{000000} 1311}                                                              \\ \hline
+{\color[HTML]{000000} JOGOS DIGITAIS}                                                                                                  & {\color[HTML]{000000} 580}                                                               \\ \hline
+{\color[HTML]{000000} ENGENHARIA DE COMPUTAÇÃO}                                                                                        & {\color[HTML]{000000} 512}                                                               \\ \hline
+{\color[HTML]{000000} SISTEMAS DE INFORMACAO}                                                                                          & {\color[HTML]{000000} 496}                                                               \\ \hline
+{\color[HTML]{000000} CIENCIA DA COMPUTACAO}                                                                                           & {\color[HTML]{000000} 281}                                                               \\ \hline
+{\color[HTML]{000000} BANCO DE DADOS}                                                                                                  & {\color[HTML]{000000} 274}                                                               \\ \hline
+{\color[HTML]{000000} ENGENHARIA DE SOFTWARE}                                                                                          & {\color[HTML]{000000} 258}                                                               \\ \hline
+{\color[HTML]{000000} SEGURANÇA DA INFORMAÇÃO}                                                                                         & {\color[HTML]{000000} 247}                                                               \\ \hline
+{\color[HTML]{000000} INFORMÁTICA}                                                                                                     & {\color[HTML]{000000} 186}                                                               \\ \hline
+{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}CURSO SUPERIOR DE TECNOLOGIA EM\\ ANALISE E DESENVOLVIMENTO DE SISTEMAS\end{tabular}} & {\color[HTML]{000000} 151}                                                               \\ \hline
+{\color[HTML]{000000} CIÊNCIAS DA COMPUTAÇÃO}                                                                                          & {\color[HTML]{000000} 126}                                                               \\ \hline
+{\color[HTML]{000000} ENGENHARIA DA COMPUTAÇÃO}                                                                                        & {\color[HTML]{000000} 108}                                                               \\ \hline
+{\color[HTML]{000000} PROCESSAMENTO DE DADOS}                                                                                          & {\color[HTML]{000000} 105}                                                               \\ \hline
+{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}CURSO SUPERIOR DE TECNOLOGIA EM \\ REDES DE COMPUTADORES\end{tabular}}                & {\color[HTML]{000000} 81}                                                                \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+%Com essa classificação entende-se melhor a pluralidade dos cursos. Uma base de dados muito rica é apresentada no censo escolar dos anos de 2009 a 2019. 
+
+Além das classificações CINE, os dados do INEP funcionam principalmente a partir de códigos e para melhor entendimento de sua base deixam disponível um dicionário de variáveis. O dicionário apresenta 105 variáveis distintas, que estão divididas em categorias, sendo elas dados da Instituição de Ensino Superior (IES), dados do curso, dados do aluno e variáveis derivadas.
+
+É importante ressaltar que para a busca de curso e IES específicas a base do INEP utiliza-se dos códigos gerados pelo e-MEC\footnote{http://emec.mec.gov.br/}, que é o sistema eletrônico de acompanhamento dos processos que regulam a educação superior no Brasil. 
+
+\section{Participação de Mulheres nas STEM}\label{sec:MeninasDigitais}
+%meninas digitais
+%https://www.sbc.org.br/images/flippingbook/computacaobrasil/computa_44/pdf/CompBrasil_44.pdf
+
+A participação das mulheres em diversos setores foi fator de incomodo para a sociedade, votar, trabalhar e estudar eram tarefas exclusivamente masculinas, isso não foi diferente no setor educacional, segundo \citeonline{barros:2020} até início do século XX a presença feminina  nas universidades era considerada indesejada.
+
+Esta exclusão histórica reflete na baixa participação de mulheres em diversos setores e tal exclusão pode ser dividida em dois tipos a horizontal, que é a falta de  mulheres em áreas específicas
+do conhecimento, e a vertical, que é a sub-representação de mulheres em postos de prestígio e poder, mesmo em carreiras consideradas femininas \cite{araujoM:2020}. 
+
+A presença feminina na educação superior brasileira embora seja expressiva de uma maneira geral, como \citeonline{suzane:2018} apresentam em sua pesquisa, em que as mulheres possuem 53,8\% das matrículas nas universidades públicas e 58,6\% nas particulares. Apesar disso, esse cenário não é igualitário em todas as áreas da ciência. A mulher tem uma representatividade minoritária nos cursos da área da computação, \citeonline{marcel:2016} mostra que entre 2000 e 2013, apenas 17\% dos concluintes eram do gênero feminino.
+
+Esse fenômeno se replica também em universidades de outros países, como os Estados Unidos \cite{lunn:2021}. Nos anos 80, 40\% dos diplomas em Ciência da Computação nos Estados Unidos eram de mulheres, ao passo que em 2013, elas representaram somente 18\% dos estudantes graduados, e ainda o curso de Ciência da Computação mostra-se o único curso em que a disparidade de gênero está aumentando nas últimas décadas \cite{NCWIT:2020}.
+
+Incentivar a diversidade de gênero em todas as áreas e em específico na área das STEM, dentro e fora da universidade, segundo \citeonline{sbc:2021} traz benefícios financeiros, criativos, de cooperação e sensação de pertencimento da equipe como um todo. \citeonline{sbc:2021} complementam que ainda temos muito a evoluir em relação à diversidade de gênero e que é esse o momento de buscar incentivos.
+
+\citeonline{oliveira:2019} afirmam que nos últimos anos o Brasil contou com iniciativas que incentivam o ingresso e a permanência de mulheres nas áreas STEM e cita como exemplo as iniciativas do Conselho Nacional
+de Desenvolvimento Científico e Tecnológico (CNPq), executadas no âmbito do Programa
+Mulher e Ciência\footnote{https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/programas/mulher-e-ciencia/mulher-e-ciencia}.
+
+As iniciativas levantadas por \citeonline{oliveira:2019} do programa Mulher e Ciência do CNPQ  tem como objetivo fomentar a pesquisa na temática relações de gênero, mulheres e feminismo, impulsionar a discussão de gênero em todos os níveis educacionais e fomentar a formação de recursos humanos nesta temática, estimular a formação de mulheres para as carreiras de
+ciências exatas, engenharias e computação no Brasil e tudo isso por meio de chamadas de apoio a projetos, encontros e prêmios.
+
+No mesmo âmbito de incentivo a participação, permanência e presença de mulheres nas STEM, \citeonline{iwamoto:2022} apresenta em seu trabalho um levantamento de publicações no Diário Oficial da União (DOU) brasileiro envolvendo mulheres nas STEM com o intuito de verificar se as diretrizes nacionais e internacionais estão sendo levadas em conta na instituição de políticas públicas.
+
+\citeonline{iwamoto:2022} fez sua busca em dezembro de 2021 no domínio “in.gov.br” utilizando o portal de busca do \textit{Google}. As palavras-chave utilizadas foram “mulheres STEM” e “mulheres tecnologias” e como retorno obteve 5 resultados para a primeira palavra-chave e 94.500 resultados para a segunda. Fez uma limpeza excluindo artigos que não falavam sobre mulheres nas STEM e também excluiu as portarias relativas a nomeação, remoção e afins. Concluiu que há raras políticas públicas de inclusão de mulheres nas STEM em âmbito federal no Brasil e afirma que este quadro prevê um baixo desenvolvimento no país nos próximos anos.
+
+%Com esse cenário de baixo incentivo a permanência e participação das mulheres, observa-se a evasão escolar ...
+
+%---Finalizar a seção para fazer sentido com a próxima---
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+%Reforçando que o contexto cultural das mulheres não terem aptidão para a área das STEM é equivocado, ....
+
+%USAR ESSE PRA INICIAR AQUI: "Apesar desse efeito visível e concreto no cotidiano das instituições educativas em geral, umestudo da Organização para a Cooperação e Desenvolvimento Econômico (OECD, 2019) sobre oteste Pisa (Programme for International Student Assessment [Programa Internacional de Avaliaçãode Estudantes])" DO ARTIGO MULHERES NAS STEM: UM ESTUDO BRASILEIRO NO DIÁRIO OFICIAL DA UNIÃO. FALA QUE AS MENINAS TIRAM NOTAS BOAS EM CIENCIAS.
+
+
+
+\section{Cálculo da Evasão}\label{sec:CalculoEvasao}
+%QUAL A DIFERENÇA DELES?
+%%%Equação MEC - Pg 22 do pdf http://www.dominiopublico.gov.br/download/texto/me002240.pdf
+%Para a construção da equação utilizada nesse trabalho, faz-se importante a contextualização histórica dos cálculos de evasão.
+Encontra-se na literatura diversas abordagens para o cálculo da evasão. \citeonline{diplomaccao:1996} trouxe um dos primeiros métodos para chegar a porcentagem de evasão dos cursos superiores, como demonstrado na Equação 1.
+
+\renewcommand{\theequation}{Eq. \arabic{equation}} 
+\begin{equation}\label{eq:mec}
+E = \frac{Ni - Nd - Nr}{Ni}\times{100}
+\end{equation}
+
+Interpretando a Equação 1 tem-se que \textit{Ni} é o número de ingressantes no ano-base e calcula-se a partir da soma do número de diplomados, o número de evadidos e o número de retidos. Essa equação considera a série histórica de dados sobre uma turma de alunos ingressantes e o tempo máximo de integralização curricular, para por fim, serem identificados como evadidos do curso os alunos que não se
+diplomaram neste período e que não estão mais vinculados ao curso em questão. 
+
+Diferente das equações seguintes, a Equação 1 é utilizada para acompanhar uma ou mais turmas de determinado curso, calcula-se a evasão levando em conta o ano de ingresso e o tempo máximo para conclusão do curso.
+%%%%----FIM MEC
+
+
+%%%%------silva 2007
+Já \citeonline{silva:2007} apresenta o calculo da evasão da seguinte maneira: 
+
+\begin{equation}\label{eq:evasaovelha}
+E(n) = 1 - \frac{M(n) - I(n)}{M(n - 1) - C(n - 1)}
+\end{equation}
+
+
+Sendo que \textit{E} é a evasão a ser calculada, \textit{M} é a quantidade de matriculados, \textit{I} é a quantidade de ingressantes, \textit{C} é a quantidade de concluintes, \textit{n} é o ano de referência e \textit{n - 1} é o ano anterior. A proposta de \citeonline{silva:2007} utilizou a base do INEP para realizar seu trabalho. Deve-se ressaltar que \citeonline{silva:2007} analisam os dados dos anos anteriores a 2009, ano em que ocorreu uma mudança na organização dos dados do INEP, logo a Equação 2 não pode ser utilizada em anos posteriores a 2009 com as mesmas variáveis.
+%%%%%%%
+
+A mudança na base de dados do INEP que impossibilita o uso das mesmas equações pode ser observada a partir do manual do usuário disponibilizado em cada base, que mostra diferentes variáveis presentes nos anos anteriores a 2009. As diferenças já iniciam na nomenclatura e disposição dos diretórios, onde um padrão é seguido nos anos anteriores a 2008 e outro de 2009 até 2019.
+
+Os dados de 2008 são divididos em:
+\begin{itemize}
+    \item Graduação Presencial – Contém informações sobre arquivos associados à área de curso de Graduação Presencial, tais como: vagas, ingressantes, inscritos, concluintes e etc;
+    \item Graduação à Distância – Contém informações sobre arquivos associados a área de curso de Graduação à Distância;
+    \item Forme-Presencial – Contém informações sobre arquivos associados à área de curso de Formação Específica Presencial tais como: vagas, ingressantes, inscritos, concluintes e etc;
+    \item Forme-Distância – Contém informações sobre arquivos associados à área de curso de Formação Específica a Distância;
+    \item Secomple-Presencial – Contém informações sobre arquivos associados à área de curso de Sequenciais de Complementação de Estudos Presencial tais como: vagas, ingressantes, inscritos, concluintes e etc;
+    \item Secomple-Distância – Contém informações sobre arquivos associados à área de curso de Sequenciais de Complementação de Estudos á Distância;
+    \item Instituições – Contém informações sobre arquivos associados as IES, tais como: pessoal docente, pessoal técnico administrativo, dados financeiros, infraestrutura e etc.
+\end{itemize}
+  
+Já as bases a partir de 2009 são organizadas em:
+\begin{itemize}
+    \item SUP\_IES\_2009 - Contém informações sobre as Instituições de Ensino Superior;
+    \item SUP\_CURSO\_2009 - Contém informações sobre os cursos oferecidos;
+    \item SUP\_DOCENTE\_2009 - Contém informações sobre os docentes;
+    \item SUP\_ALUNO\_2009 - Contém informações sobre os alunos;
+    \item SUP\_LOCAL\_OFERTA\_2009 - Contém informações sobre o local que a IES se encontra;
+    \item TB\_AUX\_CINE\_BRASIL\_2009 - tabela auxiliar dos códigos CINE.
+\end{itemize}
+
+Desta forma, percebe-se a grande diferença na organização dos dados a partir de 2009. Observando mais a fundo a discriminação das tabelas dos anos de 2008 e 2009, os dados presentes na base 'Graduação Presencial' de 2008 possui 1.314 colunas, já os itens da base 'SUP\_ALUNO\_2009' de 2009 possui 105 colunas.
+
+
+
+%Nesses dois anos em específico, observa-se que em 2008 ainda não utilizava a classificação CINE para os cursos e sim códigos disponibilizados no manual do usuário.
+
+%%%% equação utilizada no trabalho:
+Em 2017, a Diretoria de Estatísticas Educacionais publicou a Metodologia de Cálculo dos Indicadores de Fluxo da Educação Superior \citeonline{dados:2017}, onde apresentou uma nova forma de calcular a Taxa de Desistência Anual (Tada), apresentada na Equação 3, e que leva em consideração a organização dos dados do INEP a partir de 2009. É importante salientar que a definição adotada de desistência é a mesma da evasão, sendo utilizados como sinônimos ao longo do documento \citeonline{dados:2017}.
+
+\begin{equation}\label{eq:evasaonova}
+{Tada_{j,T,t}} = \frac{\sum_{i=1}^{n_{j,t}} Des_{i,j,t} + \sum_{i=1}^{n_{j,t}} Transf_{i,j,t}} {\sum_{i=1}^{n} IG^T_{i,j} - \sum_{w=T}^{t} \sum_{i=1}^{n_{j,w}} Fal_{i,j,t}} \times{100}
+\end{equation}
+
+De acordo com \citeonline{dados:2017}, para encontrar a porcentagem de evasão em determinado período de tempo, assume-se a Equação 3 onde a variável \textit{j} representa a Instituição de Ensino Superior, \textit{t} é o ano de referência, \textit{T} é o ano de ingresso, nota-se que \textit{t} $\geq$ \textit{T}, \textit{Des} representa o estudante com situação de vínculo igual a “Desvinculado do Curso” no curso \textit{j} no ano \textit{t}, \textit{Transf} os estudante com situação de vínculo igual a “Transferido para outro curso da mesma IES” no curso \textit{j} no ano \textit{t}, \textit{IG} o número total de ingressantes no curso \textit{j} no ano \textit{T} e \textit{Fal} estudante com situação de vínculo igual a “Falecido” no curso \textit{j} no ano \textit{t} e no ano \textit{T}. 
+
+Nesse contexto é importante ressaltar que o número total de ingressantes (\textit{IG}) não é representado no banco de dados por uma única variável, e sim pela somatória de diversas variáveis, sendo elas o somatório de: Estudantes com situação de vínculo igual a ``Cursando'', ``Matrícula trancada'', ``Desvinculado do curso'', ``Transferido para outro curso da mesma IES'', ``Formado” e  ``Falecido'' no curso \textit{j} no ano \textit{t} mais os Estudantes com situação de vínculo igual a ``Desvinculado do curso'', ``Transferido para outro curso da mesma IES'', ``Formado'' e  ``Falecido'' no curso \textit{j} no ano \textit{T}.
+%%%%%%%---------fim
+
+A Equação 2 se difere da Equação 3 basicamente apenas por suas variáveis, que a partir de 2009 foram modificadas na base do INEP, mas seu objetivo final é o cálculo da evasão anual, observando se o aluno progride de um ano para o posterior, por exemplo, para observar a evasão de determinado curso no ano presente, é necessário observar o ano presente e o ano anterior.
+
+Com o exposto, entende-se que as bases são completamente distintas, observando ainda mais profundamente, os dados de 2008 não contabilizam por exemplo o número de alunos falecidos, o que já inviabiliza a utilização da Equação 3 para os anos anteriores a 2019.
+
+Além das Equações citadas, exitem outras formas de calcular a evasão escolar no ensino superior. \citeonline{antonio:2014} mostra duas equações semelhantes as apresentadas e as compara com a Equação 2 utilizada por \citeonline{silva:2007}. \citeonline{antonio:2014} utiliza de dados simulados e encontra divergência em todos os cálculos, mostrando então a fragilidade e dificuldade de um padrão para o entendimento da evasão. Desta forma, faz-se necessário em todas as publicações explicitar qual modelo foi utilizado. %mais detalhes **
+
+
+\section{Discussão do Capítulo}\label{sec:discussaoCapitulo}
+
+O presente capitulo abordou na Seção \ref{sec:ConceitosEvasao} os conceitos de evasão no decorrer dos anos e finaliza trazendo o conceito utilizado nesta dissertação que considera os estudantes evadidos como todos os  desistentes com algum vínculo de matrícula, mesmo
+nunca tendo assistido a uma aula.Após isso, apresentou a fundamentação dos dados do INEP e suas classificações, onde esclarece quais foram as bases utilizadas e mostra algumas inconsistências nos dados, como a repetição de nome de curso que é encontrada na base do INEP.
+
+É abordado também sobre a participação da mulher na área das STEM, apresentando diversos pontos de vista, brasileiros e internacionais, sobre a presença e evasão das mulheres na área. Para então introduzir sobre como o cálculo da evasão é feito, onde faz-se um levantamento de equações presentes na literatura para por fim escolher a equação que melhor se adéqua aos dados do INEP dos anos anteriores a 2019. 
+
+Com toda fundamentação exposta, uma busca de trabalhos é apresentada no Capítulo \ref{cap:trabRelacionados}
+%colocar os principais pontos e fazer ligacoes com o proximo capitulo que sao os trabalhos relacionados **
+
+
+
